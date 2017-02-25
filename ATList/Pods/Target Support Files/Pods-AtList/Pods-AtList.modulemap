@@ -1,0 +1,6 @@
+framework module Pods_AtList {
+  umbrella header "Pods-AtList-umbrella.h"
+
+  export *
+  module * { export * }
+}
