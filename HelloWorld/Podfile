@@ -1,0 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+target 'HelloWorld' do
+  pod 'GoogleMaps'
+  pod 'Toucan', '~> 0.6'
+  use_frameworks!  
+end
