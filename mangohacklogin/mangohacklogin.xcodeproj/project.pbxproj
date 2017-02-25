@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A0E5E1A4BEC92134A9A7DC6 /* Pods_mangohacklogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F995D9829FECE5C8A650396 /* Pods_mangohacklogin.framework */; };
+		AC4333AC1E61DD61007F0E6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC4333AB1E61DD61007F0E6A /* GoogleService-Info.plist */; };
+		AC62BD231E615684001377CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62BD221E615684001377CD /* AppDelegate.swift */; };
+		AC62BD251E615684001377CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62BD241E615684001377CD /* ViewController.swift */; };
+		AC62BD281E615684001377CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62BD261E615684001377CD /* Main.storyboard */; };
+		AC62BD2A1E615684001377CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC62BD291E615684001377CD /* Assets.xcassets */; };
+		AC62BD2D1E615684001377CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62BD2B1E615684001377CD /* LaunchScreen.storyboard */; };
+		AC62BD371E616009001377CD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62BD361E616009001377CD /* LoginController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		135C154851603655E57DBB9B /* Pods-mangohacklogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mangohacklogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mangohacklogin/Pods-mangohacklogin.debug.xcconfig"; sourceTree = "<group>"; };
+		3F995D9829FECE5C8A650396 /* Pods_mangohacklogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mangohacklogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4333AB1E61DD61007F0E6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC62BD1F1E615684001377CD /* mangohacklogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mangohacklogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC62BD221E615684001377CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC62BD241E615684001377CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC62BD271E615684001377CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC62BD291E615684001377CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC62BD2C1E615684001377CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC62BD2E1E615684001377CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC62BD361E616009001377CD /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C28B6F4950B026888CE4E9A4 /* Pods-mangohacklogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mangohacklogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-mangohacklogin/Pods-mangohacklogin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC62BD1C1E615683001377CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0E5E1A4BEC92134A9A7DC6 /* Pods_mangohacklogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D204CC5B28CD6B8DE4539E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F995D9829FECE5C8A650396 /* Pods_mangohacklogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC62BD161E615683001377CD = {
+			isa = PBXGroup;
+			children = (
+				AC62BD211E615684001377CD /* mangohacklogin */,
+				AC62BD201E615684001377CD /* Products */,
+				E93497C5357AE0311DE73161 /* Pods */,
+				0D204CC5B28CD6B8DE4539E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC62BD201E615684001377CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC62BD1F1E615684001377CD /* mangohacklogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC62BD211E615684001377CD /* mangohacklogin */ = {
+			isa = PBXGroup;
+			children = (
+				AC62BD351E615FBF001377CD /* Controller */,
+				AC62BD221E615684001377CD /* AppDelegate.swift */,
+				AC62BD261E615684001377CD /* Main.storyboard */,
+				AC62BD291E615684001377CD /* Assets.xcassets */,
+				AC62BD2B1E615684001377CD /* LaunchScreen.storyboard */,
+				AC4333AB1E61DD61007F0E6A /* GoogleService-Info.plist */,
+				AC62BD2E1E615684001377CD /* Info.plist */,
+			);
+			path = mangohacklogin;
+			sourceTree = "<group>";
+		};
+		AC62BD351E615FBF001377CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC62BD361E616009001377CD /* LoginController.swift */,
+				AC62BD241E615684001377CD /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E93497C5357AE0311DE73161 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				135C154851603655E57DBB9B /* Pods-mangohacklogin.debug.xcconfig */,
+				C28B6F4950B026888CE4E9A4 /* Pods-mangohacklogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC62BD1E1E615683001377CD /* mangohacklogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC62BD311E615684001377CD /* Build configuration list for PBXNativeTarget "mangohacklogin" */;
+			buildPhases = (
+				87404606854469A8FD6A358B /* [CP] Check Pods Manifest.lock */,
+				AC62BD1B1E615683001377CD /* Sources */,
+				AC62BD1C1E615683001377CD /* Frameworks */,
+				AC62BD1D1E615683001377CD /* Resources */,
+				2A1DAD4CB340129A03DCC454 /* [CP] Embed Pods Frameworks */,
+				BC74AE41A59EF733A3EE7007 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mangohacklogin;
+			productName = mangohacklogin;
+			productReference = AC62BD1F1E615684001377CD /* mangohacklogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC62BD171E615683001377CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Team Get Money";
+				TargetAttributes = {
+					AC62BD1E1E615683001377CD = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = AC62BD1A1E615683001377CD /* Build configuration list for PBXProject "mangohacklogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC62BD161E615683001377CD;
+			productRefGroup = AC62BD201E615684001377CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC62BD1E1E615683001377CD /* mangohacklogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC62BD1D1E615683001377CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC62BD2D1E615684001377CD /* LaunchScreen.storyboard in Resources */,
+				AC4333AC1E61DD61007F0E6A /* GoogleService-Info.plist in Resources */,
+				AC62BD2A1E615684001377CD /* Assets.xcassets in Resources */,
+				AC62BD281E615684001377CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A1DAD4CB340129A03DCC454 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mangohacklogin/Pods-mangohacklogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87404606854469A8FD6A358B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC74AE41A59EF733A3EE7007 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mangohacklogin/Pods-mangohacklogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC62BD1B1E615683001377CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC62BD251E615684001377CD /* ViewController.swift in Sources */,
+				AC62BD371E616009001377CD /* LoginController.swift in Sources */,
+				AC62BD231E615684001377CD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC62BD261E615684001377CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC62BD271E615684001377CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC62BD2B1E615684001377CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC62BD2C1E615684001377CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC62BD2F1E615684001377CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC62BD301E615684001377CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC62BD321E615684001377CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135C154851603655E57DBB9B /* Pods-mangohacklogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mangohacklogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoney.mangohacklogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AC62BD331E615684001377CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28B6F4950B026888CE4E9A4 /* Pods-mangohacklogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mangohacklogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoney.mangohacklogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC62BD1A1E615683001377CD /* Build configuration list for PBXProject "mangohacklogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC62BD2F1E615684001377CD /* Debug */,
+				AC62BD301E615684001377CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC62BD311E615684001377CD /* Build configuration list for PBXNativeTarget "mangohacklogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC62BD321E615684001377CD /* Debug */,
+				AC62BD331E615684001377CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC62BD171E615683001377CD /* Project object */;
+}
