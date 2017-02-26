@@ -51,7 +51,14 @@ extension MapController{
         listButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         //this make two buttons on the right :) with this array
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: listButton)
+        
+        listButton.addTarget(self,action:#selector(FeelingLuckyPress),for:.touchUpInside)
     }
-    
+    @IBAction func FeelingLuckyPress(sender: UIButton) {
+        
+        let secondViewController:ListController = ListController()
+        
+        self.present(secondViewController, animated: true, completion: nil)
+    }
     
 }
