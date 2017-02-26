@@ -11,6 +11,7 @@ import UIKit
 import GoogleMaps
 import Toucan
 import Firebase
+import LBTAComponents
 
 class MapController: UIViewController {
     
@@ -59,6 +60,7 @@ class MapController: UIViewController {
         marker3.icon = newgia
         marker3.map = mapView
         
+        setupNavigationBarItemMap()
         
     }
     

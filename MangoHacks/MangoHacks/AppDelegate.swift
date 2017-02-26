@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow (frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        window?.rootViewController = UINavigationController(rootViewController: ListController())
+        window?.rootViewController = UINavigationController(rootViewController: MapController())
         
         UINavigationBar.appearance().barTintColor = UIColor(r: 230, g: 32, b: 31)
         let menuBar = MenuBar()

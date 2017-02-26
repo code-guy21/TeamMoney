@@ -22,6 +22,8 @@
 		CFA385071E62755F004B1936 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA385061E62755F004B1936 /* User.swift */; };
 		CFA385091E627F31004B1936 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA385081E627F31004B1936 /* MyCell.swift */; };
 		CFA3850B1E628C92004B1936 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA3850A1E628C92004B1936 /* MenuBar.swift */; };
+		CFA3850D1E628F78004B1936 /* ListController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA3850C1E628F78004B1936 /* ListController+navbar.swift */; };
+		CFA385101E629544004B1936 /* MapController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA3850F1E629544004B1936 /* MapController+navbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		CFA385061E62755F004B1936 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CFA385081E627F31004B1936 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		CFA3850A1E628C92004B1936 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		CFA3850C1E628F78004B1936 /* ListController+navbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ListController+navbar.swift"; sourceTree = "<group>"; };
+		CFA3850F1E629544004B1936 /* MapController+navbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapController+navbar.swift"; sourceTree = "<group>"; };
 		F18933F8660A8EDBEDCDC6CC /* Pods_MangoHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,9 +135,12 @@
 		CFA384F41E6266D0004B1936 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CFA3850E1E629523004B1936 /* NavBar */,
 				CFA384F51E626841004B1936 /* LoginController.swift */,
 				CFA384FE1E626FAD004B1936 /* MapController.swift */,
 				CFA385001E627406004B1936 /* ListController.swift */,
+				CFA3850C1E628F78004B1936 /* ListController+navbar.swift */,
+				CFA3850F1E629544004B1936 /* MapController+navbar.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -145,6 +152,13 @@
 				CFA384FC1E626D72004B1936 /* GoogleService-Info.plist */,
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		CFA3850E1E629523004B1936 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NavBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA385101E629544004B1936 /* MapController+navbar.swift in Sources */,
 				CFA384FF1E626FAD004B1936 /* MapController.swift in Sources */,
 				CFA385011E627406004B1936 /* ListController.swift in Sources */,
 				CFA384E31E62607D004B1936 /* ViewController.swift in Sources */,
@@ -280,6 +295,7 @@
 				CFA385071E62755F004B1936 /* User.swift in Sources */,
 				CFA384F61E626841004B1936 /* LoginController.swift in Sources */,
 				CFA385091E627F31004B1936 /* MyCell.swift in Sources */,
+				CFA3850D1E628F78004B1936 /* ListController+navbar.swift in Sources */,
 				CFA384E11E62607D004B1936 /* AppDelegate.swift in Sources */,
 				CFA385051E6274E9004B1936 /* UserCell.swift in Sources */,
 			);

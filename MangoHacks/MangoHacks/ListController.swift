@@ -23,7 +23,8 @@ class ListController: DatasourceController {
         //        collectionView?.backgroundColor = .white
         collectionView?.backgroundColor = UIColor(r: 255, g: 179, b: 0)
         
-        //setupNavigationBarItem()
+       
+        setupNavigationBarItemList()
         
         //this was how we use to set
         let list = HomeDatasource()
