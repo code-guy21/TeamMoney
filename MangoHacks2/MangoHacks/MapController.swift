@@ -18,7 +18,7 @@ class MapController: UIViewController {
     override func loadView() {
         
         //handleLogout()
-        checkIfUserIsLoggedIn()
+       // checkIfUserIsLoggedIn()
         let mig = #imageLiteral(resourceName: "miguel70")
         
         let newmig = Toucan(image: mig).resize(CGSize(width: 70, height: 70)).maskWithEllipse(borderWidth: 5, borderColor: UIColor.red).image
