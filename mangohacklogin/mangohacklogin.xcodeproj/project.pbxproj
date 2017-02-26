@@ -10,11 +10,13 @@
 		5A0E5E1A4BEC92134A9A7DC6 /* Pods_mangohacklogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F995D9829FECE5C8A650396 /* Pods_mangohacklogin.framework */; };
 		AC4333AC1E61DD61007F0E6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC4333AB1E61DD61007F0E6A /* GoogleService-Info.plist */; };
 		AC62BD231E615684001377CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62BD221E615684001377CD /* AppDelegate.swift */; };
-		AC62BD251E615684001377CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62BD241E615684001377CD /* ViewController.swift */; };
+		AC62BD251E615684001377CD /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62BD241E615684001377CD /* MessagesController.swift */; };
 		AC62BD281E615684001377CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62BD261E615684001377CD /* Main.storyboard */; };
 		AC62BD2A1E615684001377CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC62BD291E615684001377CD /* Assets.xcassets */; };
 		AC62BD2D1E615684001377CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62BD2B1E615684001377CD /* LaunchScreen.storyboard */; };
 		AC62BD371E616009001377CD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62BD361E616009001377CD /* LoginController.swift */; };
+		ACCBFE8B1E62479100591DD2 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBFE8A1E62479100591DD2 /* NewMessageController.swift */; };
+		ACCBFE8E1E624AC800591DD2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBFE8D1E624AC800591DD2 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +25,14 @@
 		AC4333AB1E61DD61007F0E6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC62BD1F1E615684001377CD /* mangohacklogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mangohacklogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC62BD221E615684001377CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC62BD241E615684001377CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC62BD241E615684001377CD /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		AC62BD271E615684001377CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC62BD291E615684001377CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC62BD2C1E615684001377CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC62BD2E1E615684001377CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC62BD361E616009001377CD /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		ACCBFE8A1E62479100591DD2 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		ACCBFE8D1E624AC800591DD2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C28B6F4950B026888CE4E9A4 /* Pods-mangohacklogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mangohacklogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-mangohacklogin/Pods-mangohacklogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,7 @@
 		AC62BD211E615684001377CD /* mangohacklogin */ = {
 			isa = PBXGroup;
 			children = (
+				ACCBFE8C1E624A6E00591DD2 /* Model */,
 				AC62BD351E615FBF001377CD /* Controller */,
 				AC62BD221E615684001377CD /* AppDelegate.swift */,
 				AC62BD261E615684001377CD /* Main.storyboard */,
@@ -88,9 +93,18 @@
 			isa = PBXGroup;
 			children = (
 				AC62BD361E616009001377CD /* LoginController.swift */,
-				AC62BD241E615684001377CD /* ViewController.swift */,
+				AC62BD241E615684001377CD /* MessagesController.swift */,
+				ACCBFE8A1E62479100591DD2 /* NewMessageController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		ACCBFE8C1E624A6E00591DD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACCBFE8D1E624AC800591DD2 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		E93497C5357AE0311DE73161 /* Pods */ = {
@@ -226,8 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC62BD251E615684001377CD /* ViewController.swift in Sources */,
+				ACCBFE8B1E62479100591DD2 /* NewMessageController.swift in Sources */,
+				AC62BD251E615684001377CD /* MessagesController.swift in Sources */,
 				AC62BD371E616009001377CD /* LoginController.swift in Sources */,
+				ACCBFE8E1E624AC800591DD2 /* User.swift in Sources */,
 				AC62BD231E615684001377CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
