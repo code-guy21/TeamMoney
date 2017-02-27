@@ -15,7 +15,7 @@ class HomeDatasource: Datasource {
     // this was the hard coding way to make profiles before we had the JSON connection
     let me: [User] = {
         let userMiguel = User(name: "Miguel Chavez", phnNum: "8504961538",
-                              status: "I need a BEER!!!",
+                              status: "Throwing a get together at my place",
                               color: 3,profileImage: #imageLiteral(resourceName: "Miguel"), Loction: 0)
         return [userMiguel]
     }()
@@ -26,16 +26,16 @@ class HomeDatasource: Datasource {
 //                              color: 3,profileImage: #imageLiteral(resourceName: "Miguel"), Loction: 0)
         
         let userGianne = User(name: "Gianne Francis", phnNum: "4071111111",
-                              status: "I hate Miguel LOL!!!",
-                              color: 3,profileImage: #imageLiteral(resourceName: "Gianne"), Loction: 0)
+                              status: "Getting coffee on campus",
+                              color: 1,profileImage: #imageLiteral(resourceName: "Gianne"), Loction: 2)
         
         let userAlexis = User(name: "Alexis San Javier", phnNum: "4074074071",
-                              status: "I Love making apps with Google Maps!!!",
-                              color: 3,profileImage: #imageLiteral(resourceName: "Alexis"), Loction: 0)
+                              status: "Taking a walk through the trail",
+                              color: 1,profileImage: #imageLiteral(resourceName: "Alexis"), Loction: 2)
         
         let userBrandon = User(name: "Brandon Miroux", phnNum: "4074074072",
-                               status: "I agree with Miguel !!!",
-                               color: 3,profileImage: #imageLiteral(resourceName: "Brandon"), Loction: 0)
+                               status: "Having dinner with my family",
+                               color: 0,profileImage: #imageLiteral(resourceName: "Brandon"), Loction: 1)
         return [userGianne,userAlexis,userBrandon]
     }()
     

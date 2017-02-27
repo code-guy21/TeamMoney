@@ -24,9 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow (frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        window?.rootViewController = UINavigationController(rootViewController: MapController())
+        window?.rootViewController = UINavigationController(rootViewController: ListController())
         
-        UINavigationBar.appearance().barTintColor = UIColor(r: 230, g: 32, b: 31)
+        UINavigationBar.appearance().barTintColor = UIColor(r: 255, g: 169, b: 2)
         let menuBar = MenuBar()
         UINavigationBar.appearance().addSubview(menuBar)
         

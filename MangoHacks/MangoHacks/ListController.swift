@@ -17,7 +17,7 @@ class ListController: DatasourceController {
     }
     
     override func viewDidLoad() {
-        //handleLogout()
+        handleLogout()
         checkIfUserIsLoggedIn()
         super.viewDidLoad()
         //        collectionView?.backgroundColor = .white

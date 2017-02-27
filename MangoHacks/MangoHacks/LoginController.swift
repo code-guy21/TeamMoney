@@ -1,13 +1,13 @@
-//
+///
 //  LoginController.swift
 //  MangoHacks
 //
 //  Created by Miguel Chavez on 2/25/17.
 //  Copyright © 2017 Miguel Chavez. All rights reserved.
 //
-
 import UIKit
 import Firebase
+import Toucan
 
 class LoginController: UIViewController {
     
@@ -22,7 +22,7 @@ class LoginController: UIViewController {
     
     lazy var loginRegisterButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = UIColor(r: 225, g: 109, b: 0)
+        button.backgroundColor = UIColor(r: 71, g: 123, b: 94)
         button.setTitle("Register", for: UIControlState())
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor.white, for: UIControlState())
@@ -99,6 +99,7 @@ class LoginController: UIViewController {
         let tf = UITextField()
         tf.placeholder = "Name"
         tf.translatesAutoresizingMaskIntoConstraints = false
+        //tf.backgroundColor = .clear
         return tf
     }()
     
@@ -131,11 +132,27 @@ class LoginController: UIViewController {
         return tf
     }()
     
+    //    let profileImageView: UIImageView = {
+    //                let imageView = UIImageView()
+    //                let image1 = UIImage(named: "mango")
+    //                let imageCropped = Toucan(image: image1!).resize(CGSize(width: 200, height: 200), fitMode: Toucan.Resize.FitMode.crop).image
+    //                let image2 = Toucan(image: imageCropped).maskWithEllipse(borderWidth: 3.5, borderColor: UIColor.red).image
+    //                imageView.image = image2
+    //                imageView.translatesAutoresizingMaskIntoConstraints = false
+    //                imageView.contentMode = .scaleAspectFill
+    //                return imageView
+    //            }()
+    
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "mango")
+        imageView.image = UIImage(named: "mango-1")
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        let newmig = Toucan(image: imageView.image!).resize(CGSize(width: 200, height: 200)).image
+        imageView.image = newmig
         imageView.contentMode = .scaleAspectFill
+        // imageView.frame = CGRect(x: 0, y: 0, width: 5, height: 5)
+
+        
         return imageView
     }()
     
@@ -151,6 +168,17 @@ class LoginController: UIViewController {
     func handleLoginRegisterChange() {
         let title = loginRegisterSegmentedControl.titleForSegment(at: loginRegisterSegmentedControl.selectedSegmentIndex)
         loginRegisterButton.setTitle(title, for: UIControlState())
+        
+        if (loginRegisterSegmentedControl.selectedSegmentIndex == 0) {
+            nameTextField.textColor = UIColor.white
+            nameSeparatorView.backgroundColor = UIColor.white
+            nameTextField.placeholder = ""
+        }
+        else {
+            nameTextField.textColor = UIColor.black
+            nameTextField.placeholder = "Name"
+            nameSeparatorView.backgroundColor = UIColor(r: 220, g: 220, b: 220)
+        }
         
         // change height of inputContainerView, but how???
         inputsContainerViewHeightAnchor?.constant = loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 100 : 150
@@ -172,7 +200,7 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(r: 255, g: 179, b: 0)
+        view.backgroundColor = UIColor(r: 238, g: 137, b: 35)
         
         view.addSubview(inputsContainerView)
         view.addSubview(loginRegisterButton)
@@ -198,7 +226,8 @@ class LoginController: UIViewController {
         profileImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         profileImageView.bottomAnchor.constraint(equalTo: loginRegisterSegmentedControl.topAnchor, constant: -12).isActive = true
         profileImageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        profileImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        profileImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        profileImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 25).isActive = true
     }
     
     var inputsContainerViewHeightAnchor: NSLayoutConstraint?
@@ -279,4 +308,3 @@ extension UIColor {
     }
     
 }
-

@@ -7,9 +7,10 @@
 //
 
 import LBTAComponents
-
+var color = 0
 class UserCell: DatasourceCell {
     
+//    var color = 0;
     //this lables with the string array of HomeDatasource
     override var datasourceItem: Any?{
         didSet{
@@ -17,6 +18,7 @@ class UserCell: DatasourceCell {
             nameLabel.text = user.name + ":"
             statusLabel.text = user.status
             profileImageView.image = user.profileImage
+            color = user.color
         }
     }
     
@@ -42,14 +44,25 @@ class UserCell: DatasourceCell {
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "Miguel")
-        
+        //var color = 0
         imageView.layer.cornerRadius = 25
         imageView.layer.masksToBounds = true
         imageView.clipsToBounds = true
         //        imageView.layer.cornerRadius = 25
         //        imageView.layer.masksToBounds = true;
         imageView.layer.borderWidth = 3.0
-        imageView.layer.borderColor = UIColor.blue.cgColor
+        if (color == 0) {
+            imageView.layer.borderColor = UIColor.red.cgColor
+            
+        }
+        else if (color == 1) {
+            imageView.layer.borderColor = UIColor.yellow.cgColor
+            
+        }
+        else if (color == 2) {
+            imageView.layer.borderColor = UIColor.green.cgColor
+            
+        }
         
         //        imageView.backgroundColor = .blue
         return imageView

@@ -23,7 +23,7 @@ extension ListController{
     
     private func setUpRemainingNavItems(){
         //makeing the title Image
-        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "mango"))
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "mango-1"))
         //makes it smaller and fit it inside a frame
         titleImageView.frame = CGRect(x: 0, y: 0, width: 44, height: 34)
         //back to orginal aspect ratio
@@ -59,7 +59,17 @@ extension ListController{
         mapButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
         //this make two buttons on the right :) with this array
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: mapButton)
+        mapButton.addTarget(self,action:#selector(FeelingLuckyPress2),for:.touchUpInside)
     }
+    
+    @IBAction func FeelingLuckyPress2(sender: UIButton) {
+        
+        let secondViewController:MapController = MapController()
+        self.present(secondViewController, animated: true, completion: nil)
+        
+        // self.navigationController?.pushViewController(<#T##UIViewController#>, animated: <#T##Bool#>)
+    }
+    
     
     
 }

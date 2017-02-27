@@ -13,6 +13,10 @@ class MyCell: DatasourceCell {
     //this lables with the string array of HomeDatasource
     override var datasourceItem: Any?{
         didSet{
+            guard let user = datasourceItem as? User else { return }
+            nameLabel.text = user.name + ":"
+            statusLabel.text = user.status
+            profileImageView.image = user.profileImage
         }
     }
     
@@ -45,7 +49,7 @@ class MyCell: DatasourceCell {
         //        imageView.layer.cornerRadius = 25
         //        imageView.layer.masksToBounds = true;
         imageView.layer.borderWidth = 3.0
-        imageView.layer.borderColor = UIColor.blue.cgColor
+        imageView.layer.borderColor = UIColor.green.cgColor
         
         //        imageView.backgroundColor = .blue
         return imageView
@@ -57,7 +61,7 @@ class MyCell: DatasourceCell {
         
         //        backgroundColor = .white
         
-        backgroundColor = UIColor(r: 225, g: 109, b: 0)
+        backgroundColor = UIColor(r: 255, g: 209, b: 40)
         separatorLineView.isHidden = false
         separatorLineView.backgroundColor = UIColor(r: 0, g: 0, b: 0)
         

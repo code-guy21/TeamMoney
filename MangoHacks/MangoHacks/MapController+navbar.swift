@@ -22,7 +22,7 @@ extension MapController{
     
     private func setUpRemainingNavItems(){
         //makeing the title Image
-        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "mango"))
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "mango-1"))
         //makes it smaller and fit it inside a frame
         titleImageView.frame = CGRect(x: 0, y: 0, width: 44, height: 34)
         //back to orginal aspect ratio
